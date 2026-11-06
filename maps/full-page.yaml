@@ -11,8 +11,12 @@ config:
 
 # MapLibre's own buttons. `navigation` adds zoom in/out and a compass (click
 # it to turn the map back to north). Others: scale, fullscreen, geolocate.
+# Put in the bottom-right corner so the layer panel sits alone at the top
+# right (positions: top-left, top-right, bottom-left, bottom-right).
 controls:
-  navigation: true
+  navigation:
+    enabled: true
+    position: bottom-right
 
 # Where the legend sits: top-left (default), top-right, bottom-left, bottom-right.
 legend:
